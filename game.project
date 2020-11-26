@@ -17,7 +17,7 @@ height = 1136
 shared_state = 1
 
 [library]
-include_dirs = gooey
+include_dirs = gooey-kenney
 
 [ios]
 bundle_identifier = com.britzl.defold.gooey
