@@ -1,6 +1,6 @@
 [project]
 title = Gooey-Kenney
-dependencies = https://github.com/britzl/gooey/archive/8.1.1.zip
+dependencies#0 = https://github.com/britzl/gooey/archive/10.0.0.zip
 
 [bootstrap]
 main_collection = /example/kenneyblue.collectionc
