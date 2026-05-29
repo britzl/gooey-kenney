@@ -89,12 +89,12 @@ local function update_input(input, config, node_id)
 	if input.selected then
 		gui.set_enabled(cursor, true)
 		gui.set_position(cursor, vmath.vector3(4 + input.total_width, 0, 0))
-		gui.cancel_animation(cursor, gui.PROP_COLOR)
+		gui.cancel_animations(cursor, gui.PROP_COLOR)
 		gui.set_color(cursor, vmath.vector4(1))
 		gui.animate(cursor, gui.PROP_COLOR, vmath.vector4(1,1,1,0), gui.EASING_INSINE, 0.8, 0, nil, gui.PLAYBACK_LOOP_PINGPONG)
 	else
 		gui.set_enabled(cursor, false)
-		gui.cancel_animation(cursor, gui.PROP_COLOR)
+		gui.cancel_animations(cursor, gui.PROP_COLOR)
 	end
 end
 function M.input(node_id, keyboard_type, action_id, action, config)
